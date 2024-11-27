@@ -1,0 +1,446 @@
+/* 
+.sidebar {
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+    padding: 25px 15px;
+}
+body {
+    overflow: hidden; 
+}
+
+
+.sidebar img {
+    width: 20px;
+}
+
+.sidebar .menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.sidebar .new-chat
+{
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #e6eaf1;
+    border-radius: 50px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+}
+.sidebar .recent{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 370px;
+}
+
+.sidebar .recent-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebar .recent-entry {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #282828;
+    cursor: pointer;
+}
+
+.sidebar .recent-entry:hover{
+    background-color: #e2e6eb;
+}
+.sidebar .bottom{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar .bottom-item{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body {
+    font-family: "Edu AU VIC WA NT Pre", cursive !important;
+    background-color: #161622;
+    color: #c4c7c5;
+    overflow: hidden;
+}
+
+.main, .nav, .greet, .cards, .chat-section {
+    font-family: "Edu AU VIC WA NT Pre", cursive !important;
+}
+
+.main .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 20px;
+    color: #FF9001; 
+}
+
+.main .nav img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.main .greet {
+    margin: 50px 0px;
+    font-size: 56px;
+    color: #FF9001; 
+    font-weight: 500;
+    padding: 20px;
+}
+
+.main .greet span {
+    background: -webkit-linear-gradient(16deg, #4b90ff, #FF9001); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.main .card {
+    height: 150px;
+    width:200px;
+    padding: 15px;
+    background-color: #22222a; 
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main .card img {
+    width: 45px;
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.main .card p {
+    color: #FF9001; 
+}
+
+.main .card:hover {
+    background-color: #333343; 
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: #22222a; 
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.search-box img {
+    width: 24px;
+    cursor: pointer;
+}
+
+.search-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+    color: #FF9001; 
+}
+
+.main .bottom-info {
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+    color: #c4c7c5; 
+}
+
+.chat-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 60%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #FF9001; 
+    color: #161622; 
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #333343; 
+    color: #c4c7c5; 
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.message-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.message-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bot-row {
+    flex-direction: row;
+}
+
+.user-row {
+    flex-direction: row-reverse;
+}
+
+.sidebar {
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #22222a; 
+    padding: 25px 15px;
+}
+
+.sidebar img {
+    width: 20px;
+}
+
+.sidebar .menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sidebar .new-chat {
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #333343; 
+    border-radius: 50px;
+    font-size: 14px;
+    color: #FF9001; 
+    cursor: pointer;
+}
+
+.sidebar .recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 370px;
+}
+
+.sidebar .recent-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #FF9001; 
+}
+
+.sidebar .recent-entry {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #c4c7c5; 
+    cursor: pointer;
+}
+
+.sidebar .recent-entry:hover {
+    background-color: #44454d; 
+}
+
+.sidebar .bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .bottom-item {
+    padding-right: 10px;
+    cursor: pointer;
+}
+*/
+
+
+
+
+
+
+
+/* Sidebar */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap');
+.sidebar {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #161622;
+    padding: 25px 15px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar img {
+    width: 20px;
+}
+
+/* Sidebar Menu */
+.sidebar .menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #FF9001; /* Accent color for menu items */
+    font-family: 'Orbitron', sans-serif;
+}
+
+.sidebar .menu:hover {
+    color: #ffffff;
+}
+
+/* New Chat Button */
+.sidebar .new-chat {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #FF9001;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #161622;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar .new-chat:hover {
+    background-color: #ff7e00; /* Darker shade on hover */
+}
+
+/* Recent Chats Section */
+.sidebar .recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Adjusted for spacing */
+}
+
+/* Recent Chats Title */
+.sidebar .recent-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF9001;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Individual Recent Chat Entry */
+.sidebar .recent-entry {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #282828; /* Dark background for recent entries */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar .recent-entry:hover {
+    background-color: #3a3a3a; /* Slightly lighter on hover */
+}
+
+/* Bottom Section */
+.sidebar .bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .bottom-item {
+    padding-right: 10px;
+    cursor: pointer;
+    color: #FF9001; /* Accent color for bottom items */
+    font-size: 16px;
+}
+
+.sidebar .bottom-item:hover {
+    color: #ffffff; /* Change color on hover */
+}
+
+/* Scrollable chat history */
+.sidebar .recent-entry:hover {
+    background-color: #3a3a3a; /* Lighter color when hovering */
+}
+
+/* Additional Styling for Overall Page */
+body {
+    overflow: hidden; /* Prevent page overflow */
+}
+

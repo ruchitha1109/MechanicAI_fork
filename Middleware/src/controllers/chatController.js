@@ -3,6 +3,7 @@ const { getChatModel } = require("../components/chatSession");
 const axios = require("axios");
 const llm_url = process.env.LLM;
 
+
 const chatController = {
   // Creates a new session
   // Adds a new document in database with the sessionId
